@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {{insert head_mixin.html}}
+    {{if hasmath}} {{insert head_katex.html }} {{end}}
+    {{if hascode}} {{insert head_highlight.html }} {{end}}
+    {{isdef title}} <title>{{fill title}}</title> {{end}}
+</head>
+<body>
+    {{insert header.html}}
+    
+    <main class="content">
+        <div class="post container">
+            <div class="post-header-section">
+                <h1 class="post-title">{{fill title}}</h1>
+                <p class="post-description">{{fill description}}</p>
+                <p class="post-date">{{format_date date}}</p>
+            </div>
+            <!-- Content appended here -->

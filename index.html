@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{insert head_mixin.html}}
+    <title>{{fill author}}</title>
+</head>
+<body>
+    {{insert header.html}}
+    <main class="content">
+        <div class="container">
+            {{insert frontmatter/about.html}}
+            {{insert frontmatter/social_links.html}}
+            {{insert frontmatter/recent_posts.html}}
+            {{insert frontmatter/email.html}}
+        </div>
+    </main>
+</body>
+</html>

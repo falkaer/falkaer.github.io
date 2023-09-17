@@ -1,0 +1,16 @@
+<div class="ref-icons">
+    <ul class="ref-icons-list">
+        {{for (icon, url) in socialicons}}
+        <li class="ref-icon">
+            <a href="{{fill url}}" target="_blank" rel="noreferrer noopener">
+                {{include _assets/icons/{{fill icon}}.svg}}
+            </a>
+        </li>
+        {{end}}
+        <li class="ref-icon">
+            <a id="email-icon" target="_blank" rel="noreferrer noopener">
+                {{include _assets/icons/email.svg}}
+            </a>
+        </li>
+    </ul>
+</div>

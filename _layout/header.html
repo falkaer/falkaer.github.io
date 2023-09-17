@@ -1,0 +1,39 @@
+<header class="header">
+    <nav class="header-nav">
+        <div class="avatar">
+            <a href="/">
+                {{include _assets/icons/nabla2.svg}}
+            </a>
+        </div>
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="/">{{fill website_title}}</a>
+        </div>
+        
+        <div class="nav-links">
+            {{for (name, url) in menus}}
+            <div class="nav-link">
+                <a href="{{fill url}}">
+                    {{fill name}}
+                </a>
+            </div>
+            {{end}}
+            
+            <div class="nav-link" id="burger-toggle">
+                <a>
+                    {{include _assets/icons/burger.svg}}
+                </a>
+            </div>
+            
+            <ul id="burger-menu" class="burger-menu">
+                {{for (name, url) in menus}}
+                <li class="nav-item">
+                    <a href="{{fill url}}">
+                        {{fill name}}
+                    </a>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+    </nav>
+</header>
