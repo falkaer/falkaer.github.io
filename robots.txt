@@ -1,0 +1,4 @@
+Sitemap: https://falkaer.io/sitemap.xml
+
+User-agent: *
+Disallow:
