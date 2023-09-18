@@ -3,19 +3,13 @@
 
 <url>
     <loc>https://falkaer.io/index/</loc>
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://falkaer.io/posts/index/</loc>
-    <lastmod>2023-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://falkaer.io/404/index/</loc>
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
