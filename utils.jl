@@ -39,7 +39,6 @@ end
 
 Base.isless(p1::PageListItem, p2::PageListItem) = p1.date < p2.date
 
-# TODO: https://0x0f0f0f.github.io/blog/
 function Base.show(io::IO, p::PageListItem)
     write(io, """<div class="post-title">""")
     write(io, """<span class="post-date">$(short_format_date(p.date))</span>""")
@@ -49,7 +48,6 @@ function Base.show(io::IO, p::PageListItem)
 end
 
 function style_page_list(pages)
-    # TODO: group by year etc?
     io = IOBuffer()
     for page in pages
         show(io, page)
@@ -57,7 +55,6 @@ function style_page_list(pages)
     String(take!(io))
 end
 
-# TODO: https://0x0f0f0f.github.io/blog/
 function hfun_list_pages(params)
     rpath = params[1]
     fullpath = joinpath(Franklin.path(:folder), rpath)
